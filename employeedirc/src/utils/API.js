@@ -1,6 +1,6 @@
 import axios from "axios";
-const BASEURL = "https://www.omdbapi.com/?t=";
-const APIKEY = "&apikey=trilogy";
+const BASEURL = "https://randomapi.com/api/1234abcd?key=";
+const APIKEY = "EV3I-1XIP-ZAWT-LM8M";
 
 export default {
   search: function(query) {

@@ -1,7 +1,7 @@
 import React from "react";
 
 //create a table for employees 
-// employee data should include first name, last name, DOB, phone number
+// employee data should include first name, last name, phone number, email
 function EmployeeDirc() {
     const table = (props) => {
         return (
@@ -31,11 +31,17 @@ function EmployeeDirc() {
 
     return (
         <div className="wrapper">
-            <table className="table table-striped table-hover">
-                <thread className="thread-dark">
-
-                </thread>
-            </table>
+          <table className="table">
+  <thead className="thead-light">
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">DOB</th>
+    </tr>
+  </thead>
+</table>
         </div>
     )
  }
@@ -43,3 +49,5 @@ function EmployeeDirc() {
 
 
 // filter employee data by name
+
+export default EmployeeDirc;

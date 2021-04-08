@@ -5,38 +5,39 @@ import React from "react";
 function EmployeeDirc() {
     const table = (props) => {
         return (
-            <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-        )
-    }
+ 
+          <tr>
+
+            <td className="align-middle">
+                <img src={props.employee.img} alt="Employee Picture" />
+            </td>
+            <td className="text-center align-middle">
+                {props.employee.firstName + " " + props.employee.lastName}
+            </td>
+            <td className="text-center align-middle">
+                {props.employee.phone}
+            </td>
+            <td className="text-center align-middle">
+                {props.employee.mobile}
+            </td>
+            <td className="text-center align-middle">
+                {props.employee.email}
+            </td>
+
+          </tr>
+
+        );
+    };
+
+    return (
+        <div className="wrapper">
+            <table className="table table-striped table-hover">
+                <thread className="thread-dark">
+
+                </thread>
+            </table>
+        </div>
+    )
  }
 
 

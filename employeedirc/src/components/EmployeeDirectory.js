@@ -4,7 +4,7 @@ import React from "react";
 
 //create a table for employees 
 // employee data should include first name, last name, phone number, email, DOB
-function Table(props) {
+function EmployeeDirc(props) {
 
     const Row = (props) => {
     return (
@@ -57,4 +57,4 @@ function Table(props) {
 }
 
 // filter employee data by name
-export default Table;
+export default EmployeeDirc;

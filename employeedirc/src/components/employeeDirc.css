@@ -1,0 +1,11 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: lightgrey;
+    text-shadow: black 2px 1px;
+    background-color: lightslategrey;
+    padding: 2rem;
+    font-size: italic;
+}

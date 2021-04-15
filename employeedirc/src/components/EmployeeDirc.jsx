@@ -1,5 +1,5 @@
 import React from "react";
-// add css 
+import "./employeeDirc.css"
 
 
 //create a table for employees 
@@ -20,10 +20,10 @@ function EmployeeDirc(props) {
                 {props.employee.phone}
             </td>
             <td className="text-center align-middle">
-                {props.employee.email}
+                {props.employee.cell}
             </td>
             <td className="text-center align-middle">  
-                {props.employee.dob}
+                {props.employee.email}
             </td> 
 
         </tr>
@@ -34,20 +34,19 @@ function EmployeeDirc(props) {
     // add onClick per 
     return (
         <div className="wrapper">
-
             <table className="table table-striped table-hover">
                 <thead className="thead-light">
                     <tr>
                         <th data-name="img" onClick={props.sortTable}></th>
                         <th data-name="name" onClick={props.sortTable}>Name</th>
                         <th data-name="phone" onClick={props.sortTable}>Phone</th>
+                        <th data-name="cell" onClick={props.sortTable}>Cell</th>
                         <th data-name="email" onClick={props.sortTable}>Email</th>
-                        <th data-name="dob" onClick={props.sortTable}>DOB</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {props.employees.map((x, i) => (
-                        <Row employee={x} key={i + "-empRow"} />
+                    {props.employees.map((x, i) =>(
+                    <Row employee={x} key={i + "-empRow"} />
                     ))}
                 </tbody>
             </table>

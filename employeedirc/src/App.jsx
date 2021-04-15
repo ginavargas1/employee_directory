@@ -1,6 +1,7 @@
 import React from "react";
-import EmpDirectory from "./components/EmployeeDirectory";
-import API from "./utils/API"
+import API from "./utils/API";
+import EmployeeDirc from "./components/EmployeeDirc";
+import "./style.css";
 
 class App extends React.Component {
     state = {
@@ -8,9 +9,11 @@ class App extends React.Component {
         userFiltered: [],
         oder: "ascend"
     };
+
     componentDidMount () {
         this.getUsers();
     }
+
     getUsers = async() => {
         try {
             const response = await API.getUsers();
@@ -26,13 +29,13 @@ class App extends React.Component {
 
             this.setState({ user: employeeDB, usersFiltered: employeeDB});
         }catch (error) {
-            console.warn(error);
+            console.log(error);
         }
     }
 
     handleInput = (val) => {
         this.setState ({
-            users: this.state.usersFiltered.filter((x) => x.firstName.include(val)),
+            users: this.state.usersFiltered.filter((x) => x.firstName.includes(val)),
         });
     };
 
@@ -86,9 +89,9 @@ class App extends React.Component {
                     <h1 className="text-center mb-4 searchbar">Employee Directory</h1>
                       <label className= "text-center mb-4" htmlFor="text">
                           <input className="text-center mb-4" placeholder="Search" type="text"
-                          onChange={(e) => this.handleInput(e.target.value)}></input>
+                          onChange={(e) => this.handleInput(e.target.value)}/>
                       </label>
-                      <EmpDirectory employee={this.state.users} sortTable={this.sortTable} />
+                      <EmployeeDirc employees={this.state.users} sortTable={this.sortTable} />
                 </div>
             );
         }

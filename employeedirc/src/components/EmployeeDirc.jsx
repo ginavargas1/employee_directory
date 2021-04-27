@@ -8,6 +8,7 @@ function EmployeeDirc(props) {
 
     const Row = (props) => {
     return (
+        
         <tr>
 
             <td className="align-middle">

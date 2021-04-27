@@ -1,5 +1,6 @@
 import React from "react";
 import "./employeeDirc.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 //create a table for employees 

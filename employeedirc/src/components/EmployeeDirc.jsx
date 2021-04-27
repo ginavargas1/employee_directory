@@ -8,7 +8,7 @@ function EmployeeDirc(props) {
 
     const Row = (props) => {
     return (
-        
+
         <tr>
 
             <td className="align-middle">
@@ -40,8 +40,8 @@ function EmployeeDirc(props) {
                     <tr>
                         <th data-name="img" onClick={props.sortTable}></th>
                         <th data-name="name" onClick={props.sortTable}>Name</th>
-                        <th data-name="phone" onClick={props.sortTable}>Phone</th>
-                        <th data-name="cell" onClick={props.sortTable}>Cell</th>
+                        <th data-name="phone" onClick={props.sortTable}>Work Number</th>
+                        <th data-name="cell" onClick={props.sortTable}>Cell Number</th>
                         <th data-name="email" onClick={props.sortTable}>Email</th>
                     </tr>
                 </thead>

@@ -12,7 +12,7 @@ As a user, you will be able to view the entire employee directoy at once so that
     * Cell Number 
     * Email 
 
-When you open the page you will notice that no employee information will show up. The search bar will allow you to search for specific employees based on a letter of their first name. As you search you will notice that the search will continue to narrow down per letter entered. If you press just one letter you will see a group on employee information.
+When you open the page you will notice that no employee information will show up. The search bar will allow you to search for specific employees based on their first name. However, make sure when you are searching for an employee the first letter of their name is capitalized. As you search you will notice that the search will continue to narrow down per letter entered. If you press just one letter you will see a group on employee information.
 
 (./images/employee_directory.png)
 

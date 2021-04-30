@@ -11,3 +11,10 @@ As a user, you will be able to view the entire employee directoy at once so that
 The Search bar will allow you to search for specific employees based on their first name. As you search you will notice that the search will continue to narrow down per letter entered. 
 
 (./images/employee_directory.png)
+
+### Created By
+Gina Vargas
+
+   [GitHub](https://github.com/ginavargas1)
+
+   [LinkedIn](www.linkedin.com/in/ginavargas89)

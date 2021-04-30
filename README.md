@@ -1,4 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Employee Directory 
+
 
 [Employee Directory Website](https://ginavargas1.github.io/employee_directory/)
 
